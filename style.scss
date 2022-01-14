@@ -1,8 +1,18 @@
 
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
+}
 html {
     background: black url("pexels-steve-johnson-backgroung-img.jpg") center center no-repeat;
     background-size: cover;
     color: white;
+    // position: fixed;
+    
 }
 
 body {
@@ -32,20 +42,19 @@ body {
             padding: 1rem;
         }
 }
-header{}
+header{display: block;}
     .avatar{
         display: block;
-        width: 150px;
-        height: auto;
+        width: 112px;
         margin: 0 1em 1em 0;
-        border-radius: 50%;
             @media (min-width:380px){
                 float:left
             }
             @media (min-width:930px){
-                width:clamp(150pc 14vw 15rem);
+                width:clamp(130px 14vw 12rem);
             }
     }
+    .avatar img { display: block; width: 100%; height: auto; border-radius: 50%; }
     
     .pageTitle{
         
@@ -59,7 +68,7 @@ header{}
         margin: 0;
         font-size: clamp(1.5rem, 2vh, 2rem);
         color: rgb(233, 165, 17);
-        font-weight: 100;
+        font-weight: 400;
         line-height: 2em;
     }
     .mainDescription{ 
@@ -92,7 +101,7 @@ header{}
                         color:#fff;
                         text-decoration: none;
                         & :hover{
-                            padding: 1rem;
+                            padding: 0 .5rem;
                             background-color: white;
                             color: black;
                         }
